@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="hidepara" value="hide paragraph">
+    <input type="button" id="showpara" value="show paragraph">
+    <input type="button" id="togglepara" value="toggle paragraph">
+
+    <input type="button" id="fadeInpara" value="fadeIn paragraph">
+    <input type="button" id="fadeOutpara" value="fadeOut paragraph">
+    <input type="button" id="fadeTogglepara" value="fadeToggle paragraph">
+
+    <input type="button" id="sideUppara" value="sideUp paragraph">
+    <input type="button" id="sideDownpara" value="sideDown paragraph">
+    <input type="button" id="sideTogglepara" value="sideToggle paragraph">
+
+      <div id="abc" style="background-color:darkseagreen;">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis molestias deleniti dignissimos labore autem expedita fugit voluptatum tempora unde alias aliquam itaque beatae, vero dolorem saepe natus nostrum nulla!</p>
+    </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script>
+ $(document).ready(function (){
+    $("#fadeInpara").dblclick(function(){
+        $("#abc").show(3000);
+    })
+
+    $("#fadeOutpara").click(function(){
+        $("#abc").hide(3000);
+    })
+
+    $("#fadeTogglepara").click(function(){
+        $("#abc").toggle(3000);
+    })
+
+
+
+
+    $("#showpara").dblclick(function(){
+        $("#abc").show(3000);
+    })
+
+    $("#hidepara").click(function(){
+        $("#abc").hide(3000);
+    })
+
+    $("#togglepara").click(function(){
+        $("#abc").toggle(3000);
+    })
+
+
+    
+
+    $("#sideUppara").click(function(){
+        $("#abc").slideUp(3000);
+    })
+
+    $("#sideDownpara").click(function(){
+        $("#abc").slideDown(3000);
+    })
+    $("#sideTogglepara").click(function(){
+        $("#abc").slideToggle(3000);
+    })
+
+
+
+
+
+
+
+ });
+
+
+
+
+
+</script>
+</body>
+</html>
